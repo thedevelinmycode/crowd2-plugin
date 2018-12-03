@@ -34,6 +34,7 @@ import com.atlassian.crowd.exception.InvalidAuthenticationException;
 import com.atlassian.crowd.exception.InvalidTokenException;
 import com.atlassian.crowd.exception.OperationFailedException;
 import com.atlassian.crowd.exception.UserNotFoundException;
+import com.atlassian.crowd.integration.AuthenticationState;
 import com.atlassian.crowd.integration.http.CrowdHttpAuthenticator;
 import com.atlassian.crowd.integration.http.CrowdHttpAuthenticatorImpl;
 import com.atlassian.crowd.integration.http.util.CrowdHttpTokenHelper;
@@ -645,7 +646,8 @@ public class CrowdConfigurationService {
         if (LOG.isLoggable(Level.FINEST)) {
             LOG.finest("CrowdHttpAuthenticator.isAuthenticated()");
         }
-        return crowdHttpAuthenticator.isAuthenticated(httpServletRequest, httpServletResponse);
+        AuthenticationState authState = crowdHttpAuthenticator.checkAuthenticated(httpServletRequest, httpServletResponse);
+        return authState.isAuthenticated();
     }
 
     /**

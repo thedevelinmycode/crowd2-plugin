@@ -54,13 +54,13 @@
         <junit-vintage-engine>5.2.0</junit-vintage-engine>
         <junit-jupiter.version>5.2.0</junit-jupiter.version>
         <junit-platform.version>1.2.0</junit-platform.version>
-        <mockito.version>2.19.0</mockito.version>
+        <mockito.version>2.23.4</mockito.version>
         <jacoco-maven-plugin.version>0.8.1</jacoco-maven-plugin.version>
-        <maven-surefire-plugin.version>2.21.0</maven-surefire-plugin.version>
-        <jenkins-mailer-plugin.version>1.21</jenkins-mailer-plugin.version>
+        <maven-surefire-plugin.version>3.0.0-M1</maven-surefire-plugin.version>
+        <jenkins-mailer-plugin.version>1.22</jenkins-mailer-plugin.version>
         <commons-codec.version>1.11</commons-codec.version>
         <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
-        <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
+        <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
         <java.level>8</java.level>
         <findbugs.failOnError>false</findbugs.failOnError>
     </properties>

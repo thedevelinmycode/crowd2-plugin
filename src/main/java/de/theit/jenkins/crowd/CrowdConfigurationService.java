@@ -1,20 +1,20 @@
 /*
  * @(#)CrowdConfigurationService.java
- * 
+ *
  * The MIT License
- * 
+ *
  * Copyright (C)2011 Thorsten Heit.
- * 
+ *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
  * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
- * 
+ *
  * The above copyright notice and this permission notice shall be included in
  * all copies or substantial portions of the Software.
- * 
+ *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -146,28 +146,28 @@ public class CrowdConfigurationService {
     /**
      * Creates a new Crowd configuration object.
      *
-     * @param url The Crowd URL
-     * @param applicationName The Crowd application name
-     * @param password The Crowd application password
+     * @param url                       The Crowd URL
+     * @param applicationName           The Crowd application name
+     * @param password                  The Crowd application password
      * @param sessionValidationInterval The session validation interval
-     * @param useSSO Specifies if SSO should be enabled
-     * @param cookieDomain The cookie domain
-     * @param cookieTokenkey The cookie token key
-     * @param useProxy the Specifies if a proxy should be used
-     * @param httpProxyHost The http proxy host
-     * @param httpProxyPort The http proxy port
-     * @param httpProxyUsername The http proxy username
-     * @param httpProxyPassword The http proxy password
-     * @param socketTimeout The socket timeout
-     * @param httpTimeout The http timeout
-     * @param httpMaxConnections The http max connections
-     * @param useCache The use cache
-     * @param cacheSize the cache size
-     * @param cacheTTL The cache TTL
-     * @param pGroupNames   The group names to use when authenticating Crowd users. May
-     *                      not be <code>null</code>.
-     * @param pNestedGroups Specifies whether nested groups should be used when validating
-     *                      users against a group name.
+     * @param useSSO                    Specifies if SSO should be enabled
+     * @param cookieDomain              The cookie domain
+     * @param cookieTokenkey            The cookie token key
+     * @param useProxy                  the Specifies if a proxy should be used
+     * @param httpProxyHost             The http proxy host
+     * @param httpProxyPort             The http proxy port
+     * @param httpProxyUsername         The http proxy username
+     * @param httpProxyPassword         The http proxy password
+     * @param socketTimeout             The socket timeout
+     * @param httpTimeout               The http timeout
+     * @param httpMaxConnections        The http max connections
+     * @param useCache                  The use cache
+     * @param cacheSize                 the cache size
+     * @param cacheTTL                  The cache TTL
+     * @param pGroupNames               The group names to use when authenticating Crowd users. May
+     *                                  not be <code>null</code>.
+     * @param pNestedGroups             Specifies whether nested groups should be used when validating
+     *                                  users against a group name.
      */
     public CrowdConfigurationService(String url, String applicationName, Secret password,
                                      int sessionValidationInterval, boolean useSSO,
@@ -183,8 +183,8 @@ public class CrowdConfigurationService {
         }
         this.allowedGroupNames = new ArrayList<String>();
         for (String group : pGroupNames.split(",")) {
-        	group = group.trim();
-        	if (group.length() > 0) {
+            group = group.trim();
+            if (group.length() > 0) {
                 if (LOG.isLoggable(Level.FINE)) {
                     LOG.fine("-> adding allowed group name: " + group);
                 }
@@ -772,8 +772,8 @@ public class CrowdConfigurationService {
      */
     private static class CacheMap<K, V> extends LinkedHashMap<K, CacheEntry<V>> {
 
-		private static final long serialVersionUID = 1L;
-		private final int cacheSize;
+        private static final long serialVersionUID = 1L;
+        private final int cacheSize;
 
         public CacheMap(int cacheSize) {
             super(cacheSize + 1); // prevent realloc when hitting cache size limit

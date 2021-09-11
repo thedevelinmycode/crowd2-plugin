@@ -1,12 +1,16 @@
 # Crowd 2 Plugin for Jenkins (crowd2-plugin)
 
+This is a fork of the original Crowd2 plugin as that project has gone dark. I ([thedevelinmycode](https://github.com/thedevelinmycode)) created this fork to upgrade Crowd2 to Java 11.
+
+It is very likely that none of the information past this point is valid/correct, so don't rely on it. The roadmap for v3.0.0 below is not relevant to this fork.
+
 This plugin allows using [Atlassian Crowd](https://www.atlassian.com/software/crowd) or [JIRA](https://www.atlassian.com/software/jira) as an authentication and authorization provider for Jenkins (Crowd version 2 and later). 
 
-[![Build Status](https://ci.jenkins.io/buildStatus/icon?job=Plugins/crowd2-plugin/master)](https://ci.jenkins.io/job/Plugins/job/crowd2-plugin/job/master/)
+<!--[![Build Status](https://ci.jenkins.io/buildStatus/icon?job=Plugins/crowd2-plugin/master)](https://ci.jenkins.io/job/Plugins/job/crowd2-plugin/job/master/)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=jenkins-crowd2-plugin&metric=coverage)](https://sonarcloud.io/dashboard?id=jenkins-crowd2-plugin)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=jenkins-crowd2-plugin&metric=security_rating)](https://sonarcloud.io/dashboard?id=jenkins-crowd2-plugin)
 
-[![Quality Gate](https://sonarcloud.io/api/project_badges/quality_gate?project=jenkins-crowd2-plugin)](https://sonarcloud.io/dashboard?id=jenkins-crowd2-plugin)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/quality_gate?project=jenkins-crowd2-plugin)](https://sonarcloud.io/dashboard?id=jenkins-crowd2-plugin)-->
 
 ## Usage
 

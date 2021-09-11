@@ -8,7 +8,7 @@
     </parent>
 
     <artifactId>crowd2</artifactId>
-    <version>2.0.0</version>
+    <version>3.0.0</version>
 
     <packaging>hpi</packaging>
 
@@ -22,6 +22,10 @@
     </issueManagement>
 
     <developers>
+        <developer>
+            <id>thedevelinmycode</id>
+            <url>https://github.com/thedevelinmycode</url>
+        </developer>
         <developer>
             <id>theit</id>
             <name>Thorsten Heit</name>
